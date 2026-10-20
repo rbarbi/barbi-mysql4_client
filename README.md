@@ -5,6 +5,10 @@ existe para resolver problemas de compatibilidade que as IDEs e os drivers atuai
 
 [**⬇ Baixar a última versão (BarbiMysql4Client.exe)**](https://github.com/rbarbi/barbi-mysql4_client/releases/latest)
 
+> **Cliente MySQL 4 para Windows** · conecta em MySQL 3.23 / 4.0 / 4.1 · suporta `OLD_PASSWORD`
+> (`mysql_old_password`) · alternativa ao MySQL Workbench, DBeaver e HeidiSQL para servidores legados
+> · executável único, sem instalação.
+
 ---
 
 ## Por que este projeto existe
@@ -101,3 +105,32 @@ O script cria um venv em `%LOCALAPPDATA%\mysql4client-build`, instala o PyInstal
 | `mysql4client.py` | Interface gráfica (Tkinter)                                              |
 | `exporters.py`    | Exportação para xlsx, csv, json e sql                                    |
 | `build.bat`       | Geração do executável com PyInstaller                                    |
+
+## Problemas que este cliente resolve
+
+Se você chegou aqui procurando uma destas mensagens ou situações, este projeto é para você:
+
+- `Client does not support authentication protocol requested by server; consider upgrading MySQL client`
+- `Authentication method 'mysql_old_password' not supported by any of the available plugins`
+- `Unable to load authentication plugin 'mysql_old_password'`
+- `Connection using old (pre-4.1.1) authentication protocol refused (client option 'secure_auth' enabled)`
+- MySQL Workbench, DBeaver ou HeidiSQL não conectam num servidor MySQL 4.0 / 4.1 / 3.23
+- Precisa consultar, editar ou exportar (Excel/CSV) dados de um banco MySQL antigo de um sistema legado
+
+*Palavras-chave: mysql 4 client, mysql 4.0, mysql 4.1, mysql 3.23, old password, old_passwords,
+mysql_old_password, pre-4.1 authentication, legacy mysql, cliente mysql antigo, conectar mysql antigo,
+sistema legado.*
+
+## Contribuindo
+
+Contribuições são bem-vindas! Abra uma *issue* para relatar problemas ou sugerir melhorias, ou envie
+um *pull request*. Ao contribuir, você concorda que sua contribuição será licenciada sob os mesmos
+termos deste projeto.
+
+## Licença e autoria
+
+Criado por **[Ricardo Barbi](https://github.com/rbarbi)**.
+
+Distribuído sob a [Apache License 2.0](LICENSE). Você pode usar, modificar e redistribuir o
+projeto, inclusive comercialmente, desde que **mantenha o arquivo [NOTICE](NOTICE) com o crédito ao
+criador original** e os avisos de copyright, e indique as alterações que fizer.
